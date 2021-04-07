@@ -4,7 +4,8 @@ from rest_framework.permissions import IsAuthenticated
 
 from core.models import Ingredient, Recipe, Tag
 
-from .serializers import IngredientSerializer, RecipeDetailSerializer, RecipeSerializer, TagSerializer
+from .serializers import (IngredientSerializer, RecipeDetailSerializer,
+                          RecipeSerializer, TagSerializer)
 
 
 class BaseRecipeAttrViewSet(viewsets.GenericViewSet,
